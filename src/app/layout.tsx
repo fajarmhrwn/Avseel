@@ -1,7 +1,18 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter,Plus_Jakarta_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+})
+
+const jakarta = Plus_Jakarta_Sans({
+  display: 'swap',
+  subsets: ['latin'],
+  weight:['400','600'],
+  variable:'--font-jakarta-sans',
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.variable} ${jakarta.variable}`}>{children}</body>
     </html>
   )
 }
