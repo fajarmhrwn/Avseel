@@ -29,7 +29,7 @@ const Hero = () => {
         src="/images/OilDropper.png"
         width={300}
         height={300}
-        className="absolute z-50 left-16 sm:left-32 top-0 sm:top-10 scale-70 sm:scale-100 logo"
+        className="absolute z-50 left-16 sm:left-32 top-0 sm:top-10 scale-60 sm:scale-100 logo"
         alt="Logo"
       />
       <div className="sm:relative bg-[url('/images/Background.png')] bg-cover bg-center overflow-hidden min-h-screen flex justify-center items-end pb-36 sm:pb-2 sm:justify-end">
