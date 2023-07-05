@@ -9,10 +9,10 @@ const Navbar = () => {
     
 <nav className="bg-[#d8bc90] border-[#d8bc90]">
   <div className="max-w-screen-xl flex flex-wrap items-center gap-12 mx-auto p-4 px-12">
-    <a href="#" className="flex items-center">
+    <Link href="#" className="flex items-center">
         <Image src="/images/Logo.png" width={36} height={36} className="mr-3" alt="Logo" />
         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"> <a href="#">Avseel</a></span>
-    </a>
+    </Link>
     <span className='block md:hidden grow'/>
     {/* Button SM */}
     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false" onClick={()=>{setOpen(!open)}}>

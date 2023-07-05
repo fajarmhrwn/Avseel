@@ -1,37 +1,48 @@
+"use client"
 import React, { useRef, useEffect } from 'react';
-import Image from 'next/image';
+import { motion,useInView,useAnimation } from "framer-motion"
 import './Hero.css';
 
 const Hero = () => {
-  const heroRef = useRef<HTMLDivElement>(null);
+  
+  const heroRef = useRef<HTMLImageElement>(null);
+  const isInView = useInView(heroRef);
+  const animation = useAnimation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      const logo = document.querySelector('.logo') as HTMLElement;
-      const heroSection = heroRef.current;
-      const scrollPosition = window.scrollY;
-      const heroPosition = heroSection?.getBoundingClientRect().top ?? 0;
+    const screenWidth = window.innerWidth;
+    const transformValue = screenWidth <= 500 ? "translateY(200%)" : "translateY(150%)";
+    if (isInView) {
+      animation.start({
+        transform: transformValue,
+        transition: {
+          duration: 1,
+          ease: "easeOut",
+        },
+      });
+    }
+    if (!isInView) {
+      animation.start({
+        transform: "translateY(0%)",
+        transition: {
+          duration: 1,
+          ease: "easeOut",
+        },
+      });
+    }
+  }, [isInView, animation]);
 
-      if (logo && scrollPosition > heroPosition) {
-        logo.classList.add('scrolled');
-      } else if (logo) {
-        logo.classList.remove('scrolled');
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   return (
     <div className="relative">
-      <img
+      <motion.img
         src="/images/OilDropper.png"
-        className="absolute z-50 left-32  w-48 sm:w-72 h-auto top-10 logo"
+        className="absolute z-50 left-32 w-48 sm:w-72 h-auto top-10"
         alt="Logo"
+        animate={animation}
       />
-      <div className="sm:relative bg-[url('/images/Background.png')] bg-cover bg-center overflow-hidden h-128 sm:min-h-screen flex justify-center items-end pb-36 sm:pb-2 sm:justify-end">
-        <p className="font-jakarta text-white text-center sm:text-left text-3xl sm:text-7xl sm:absolute sm:bottom-48 sm:right-12">
+      <div  className="sm:relative bg-[url('/images/Background.png')] bg-cover bg-center overflow-hidden h-128 sm:min-h-screen flex justify-center items-end pb-36 sm:pb-2 sm:justify-end">
+        <p  className="font-jakarta text-white text-center sm:text-left text-3xl sm:text-7xl sm:absolute sm:bottom-48 sm:right-12">
           <span className="text-[20px]">Avseel</span>
           <br />
           Experience

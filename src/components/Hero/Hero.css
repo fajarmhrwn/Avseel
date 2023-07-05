@@ -1,8 +1,5 @@
 .scrolled {
-    transform: translateY(140%);
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 500ms;
+    transform: translateY(150%);
 }
 
 @media (max-width: 768px) {
