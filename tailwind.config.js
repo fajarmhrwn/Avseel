@@ -16,7 +16,7 @@ module.exports = {
         jakarta:['var(--font-jakarta-sans)'],
       },
       height: {
-        '128': '740px',
+        '128': '780px',
       }
     },
   },
