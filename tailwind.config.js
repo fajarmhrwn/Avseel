@@ -14,6 +14,9 @@ module.exports = {
       },
       fontFamily:{
         jakarta:['var(--font-jakarta-sans)'],
+      },
+      height: {
+        '128': '740px',
       }
     },
   },
