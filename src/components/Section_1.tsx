@@ -56,8 +56,8 @@ const Section_1 = () => {
             setTimeout(() => {screenWidth < 500 ? animateMobile():animationLaptop()}, 1000);
         }else{
             imageAnimation.start({
-                opacity:0,
                 left:screenWidth <= 500 ? "" : '30%',
+                opacity:0,
                 transform:screenWidth <= 500 ? '' : 'translateX(50%)'
             })
             textAnimation.start({
