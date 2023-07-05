@@ -1,3 +1,4 @@
+"use client"
 import React,{useRef,useEffect} from 'react'
 import { motion,useInView,useAnimation } from "framer-motion"
 
@@ -6,7 +7,6 @@ const Section_1 = () => {
     const textAnimation = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const isInView = useInView(ref)
-    const screenWidth = window.innerWidth;
     const animationLaptop = async () => {
         await imageAnimation.start({
             opacity:1,
@@ -51,7 +51,7 @@ const Section_1 = () => {
         })
     }
     useEffect(() => {
-        
+        const screenWidth = window.innerWidth;
         if(isInView){
             setTimeout(() => {screenWidth < 500 ? animateMobile():animationLaptop()}, 1000);
         }else{
