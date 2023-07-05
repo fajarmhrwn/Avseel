@@ -70,7 +70,7 @@ const Section_1 = () => {
 
   return (
     <div ref={ref} className="relative flex flex-col bg-[url('/images/Background3.png')] bg-cover bg-center h-128 sm:min-h-screen flex justify-center items-center sm:items-end p-12 pb-36 sm:pb-2">
-        <motion.img src="/images/gen1.png" className='absolute left-1/2 transform -translate-x-1/2 w-32 h-auto sm:w-64'
+        <motion.img src="/images/Gen1.png" className='absolute left-1/2 transform -translate-x-1/2 w-32 h-auto sm:w-64'
         initial={{opacity:0}}
         animate={imageAnimation}
         / >
