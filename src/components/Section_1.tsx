@@ -17,8 +17,8 @@ const Section_1 = () => {
             }
         })
         await imageAnimation.start({
-            left:0,
-            transform:'translateX(50%)',
+            right:0,
+            transform:'translateX(180%)',
             transition:{
                 duration:1,
                 ease:'easeOut',
@@ -69,15 +69,15 @@ const Section_1 = () => {
 
 
   return (
-    <div ref={ref} className="relative flex flex-col bg-[url('/images/Background3.png')] bg-cover bg-center h-128 sm:min-h-screen flex justify-center items-center sm:items-end p-12 pb-36 sm:pb-2">
-        <motion.img src="/images/Gen1.png" className='absolute left-1/2 transform -translate-x-1/2 w-32 h-auto sm:w-64'
+    <div ref={ref} className="relative flex flex-col bg-[url('/images/Background3.png')] bg-cover bg-center h-128 sm:min-h-screen flex justify-center items-center sm:items-start p-12 sm:pl-24 pb-36 sm:pb-2">
+        <motion.img src="/images/Gen1.png" className='absolute sm:right-1/2 transform sm:-translate-x-1/2 w-32 h-auto sm:w-64'
         initial={{opacity:0}}
         animate={imageAnimation}
         / >
-        <motion.p  className="font-jakarta absolute sm:font-extralight text-white text-center sm:text-right text-lg sm:text-3xl translate-y-44 sm:translate-y-0 w-3/4 sm:w-7/12"
+        <motion.p  className="font-jakarta absolute sm:font-extralight text-white text-center sm:text-left text-lg sm:text-3xl translate-y-44 sm:translate-y-0 w-3/4 sm:w-7/12"
         initial={{opacity:0}}
         animate={textAnimation}>
-        Our first journey started with the first generation of AVSEEL as Organic Scented Repelling Spray.The product at this stage is applicated for external use, such as the skin.
+        Our first journey started with the <span className='font-bold'>first generation</span> of AVSEEL as Organic Scented Repelling Spray.The product at this stage is applicated for external use, such as the skin.
         </motion.p>
     </div>
 

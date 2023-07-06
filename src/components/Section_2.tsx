@@ -31,8 +31,9 @@ const Section_2 = () => {
         <motion.p  className="font-jakarta absolute sm:font-extralight text-white text-center text-lg sm:text-3xl w-3/4 sm:w-7/12"
         initial={{opacity:0}}
         animate={textAnimation}>
-        Continued to the second generation, AVSEEL X, we present this calming essential oil which also acts as distressing media as novelty with a number of scent variation and ginger scent as our foremost smell. You can use AVSEEL X to increase your room aesthetic value!
+        Continued to the <span className='font-bold'>second generation</span>, AVSEEL X, we present this calming essential oil which also acts as distressing media as novelty with a number of scent variation and ginger scent as our foremost smell. You can use AVSEEL X to increase your room aesthetic value!
         </motion.p>
+        <img />
     </div>
 
   )
