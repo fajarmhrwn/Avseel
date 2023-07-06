@@ -3,7 +3,7 @@ import Hero from "@/components/Hero/Hero"
 import Navbar from "@/components/Navbar"
 import Section_1 from "@/components/Section_1"
 import Section_2 from "@/components/Section_2"
-import Section_3 from "@/components/Section_3"
+import Section_3 from "@/components/Section-3/Section_3"
 import Head from "next/head"
 import Link from "next/link"
 

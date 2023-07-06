@@ -13,7 +13,6 @@ const Section_2 = () => {
                     transition:{
                         duration:1,
                         ease:'easeIn',
-                        delay:2
                     }
                 })
         }else{

@@ -53,7 +53,7 @@ const Section_1 = () => {
     useEffect(() => {
         const screenWidth = window.innerWidth;
         if(isInView){
-            setTimeout(() => {screenWidth < 500 ? animateMobile():animationLaptop()}, 1000);
+            screenWidth < 500 ? animateMobile():animationLaptop()
         }else{
             imageAnimation.start({
                 left:screenWidth <= 500 ? "" : '30%',

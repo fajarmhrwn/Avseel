@@ -2,8 +2,7 @@
 import React,{useRef,useEffect} from 'react'
 import { motion,useInView,useAnimation } from "framer-motion"
 
-
-const Section_3 = () => {
+const Top = () => {
     const textAnimation = useAnimation();
     const circleAnimation = useAnimation();
     const imageAnimation = useAnimation();
@@ -13,15 +12,14 @@ const Section_3 = () => {
         await textAnimation.start({
                 opacity:1,
                 transition:{
-                    duration:1,
+                    duration:0.5,
                     ease:'easeIn',
-                    delay:2
                 }
             })
         await imageAnimation.start({
             y:"3%",
             transition:{
-                duration:2,
+                duration:1,
                 ease:'easeInOut',
             }
         })
@@ -29,7 +27,7 @@ const Section_3 = () => {
             opacity:1,
             scale:[null,1.5,1],
             transition:{
-                duration:2,
+                duration:1,
                 ease:'easeInOut',
             }
         })
@@ -77,4 +75,4 @@ const Section_3 = () => {
   )
 }
 
-export default Section_3
+export default Top
