@@ -55,13 +55,13 @@ const Section_3 = () => {
     }, [isInView,textAnimation])
   return (
     <div ref={ref} className='overflow-hidden relative  min-h-100  sm:min-h-screen bg-[#142419] pt-64 flex justify-center'>
-        <div className='h-64 sm:min-h-screen bg-[#48855C] w-2/3 rounded-t-full flex justify-center'>
+        <div className='h-64 sm:h-128 bg-[#48855C] w-10/12 rounded-t-full flex justify-center'>
             <motion.p className='absolute top-24 sm:top-24 z-10 text-center font-jakarta text-white text-4xl sm:text-8xl sm:w-1/2 drop-shadow-2xl'
             initial={{opacity:0}}
             animate={textAnimation}>
             BRAND NEW<br/><span className='text-5xl sm:text-9xl font-bold'>AVSEEL X+</span>
             </motion.p>
-            <motion.img src="/images/Gen3.png" className='absolute top-36 w-72 sm:w-128 z-1 h-auto'
+            <motion.img src="/images/Gen3.png" className='absolute top-36 sm:top-24 w-72 sm:w-128 z-1 h-auto'
             initial={{y:"100vh"}}
             animate={imageAnimation}/>
         </div>
