@@ -11,7 +11,7 @@ const Hero = () => {
 
   useEffect(() => {
     const screenWidth = window.innerWidth;
-    const transformValue = screenWidth <= 500 ? "translateY(200%)" : "translateY(150%)";
+    const transformValue = screenWidth <= 500 ? "translateY(220%)" : "translateY(150%)";
     if (isInView) {
       animation.start({
         transform: transformValue,
