@@ -19,7 +19,7 @@ module.exports = {
       },
       height: {
         '128': '780px',
-        '100':'400px',
+        '100':'600px',
       },
       width:{
         '128': '700px',
@@ -27,6 +27,7 @@ module.exports = {
       },
       minHeight: {
         '96': '500px',
+        '128': '780px',
       }
     },
   },

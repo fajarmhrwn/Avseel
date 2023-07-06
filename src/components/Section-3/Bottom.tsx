@@ -1,6 +1,6 @@
 import React,{useRef} from 'react'
 import SlidingInterval from './Carousel';
-import { Reveal } from './ui/Reveal';
+import { Reveal } from '../ui/Reveal';
 
 const Bottom = () => {
     const ref = useRef<HTMLDivElement>(null);
