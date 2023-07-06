@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter,Plus_Jakarta_Sans } from 'next/font/google'
+import Head from 'next/head'
+
 
 const inter = Inter({
   subsets: ['latin'],
@@ -26,6 +28,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+
       <body className={`${inter.variable} ${jakarta.variable}`}>{children}</body>
     </html>
   )
