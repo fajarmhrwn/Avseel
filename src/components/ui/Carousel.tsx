@@ -3,7 +3,7 @@ import { CarouselItem,CarouselProps} from "./CarouselItem";
 import "./Carousel.css";
 export const Carousel = ({items}:{items:CarouselProps[]}) => {
   const [activeIndex, setActiveIndex] = useState<Number>(0);
-  const updateIndex = (newIndex:Number) => {
+  const updateIndex = (newIndex:number) => {
     if (newIndex < 0) {
       newIndex = 0;
     } else if (newIndex >= items.length) {
@@ -19,6 +19,7 @@ export const Carousel = ({items}:{items:CarouselProps[]}) => {
         {items.map((item, index) => {
         return (
             <button
+            key={index}
             className="indicator-buttons"
             onClick={() => {
                 updateIndex(index);
@@ -42,8 +43,8 @@ export const Carousel = ({items}:{items:CarouselProps[]}) => {
         style={{ transform: `translate(-${activeIndex as number * 100}%)`
      }}
       >
-        {items.map((item) => {
-          return <CarouselItem item={item.item} title={item.title} content={item.content} width={"100%"} />;
+        {items.map((item,key) => {
+          return <CarouselItem key={key} item={item.item} title={item.title} content={item.content} width={"100%"} />;
         })}
       </div>
 
