@@ -29,6 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-site-verification" content="C6AOOM5iUTJweDxiXS9QaQphHGup6THmyEdjJpa1MbI" />
+      </Head>
       <body className={`${inter.variable} ${jakarta.variable}`}>
         <CardProvider>
           {children}
