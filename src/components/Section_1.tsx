@@ -2,7 +2,7 @@
 import React,{useRef,useEffect} from 'react'
 import { motion,useInView,useAnimation } from "framer-motion"
 
-const Section_1 = () => {
+const Section_1 = ({id}:{id:string}) => {
     const imageAnimation = useAnimation();
     const textAnimation = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
@@ -69,7 +69,7 @@ const Section_1 = () => {
 
 
   return (
-    <div ref={ref} className="relative flex flex-col bg-[url('/images/Background3.png')] bg-cover bg-center h-128 sm:min-h-screen flex justify-center items-center sm:items-start p-12 sm:pl-24 pb-36 sm:pb-2">
+    <div id={id} ref={ref} className="relative flex flex-col bg-[url('/images/Background3.png')] bg-cover bg-center h-128 sm:min-h-screen flex justify-center items-center sm:items-start p-12 sm:pl-24 pb-36 sm:pb-2">
         <motion.img src="/images/Gen1.png" className='absolute sm:right-1/2 transform sm:-translate-x-1/2 w-32 h-auto sm:w-64'
         initial={{opacity:0}}
         animate={imageAnimation}

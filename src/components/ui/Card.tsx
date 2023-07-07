@@ -18,11 +18,11 @@ const Card = ({title,price,content}:CardProps) => {
   return (
     <div className='w-80 h-fit rounded-md sm:shadow-2xl bg-transparent'>
       <button className='text-white self-place-start text-xl font-bold font-jakarta  block sm:hidden ' onClick={()=>{setOpen(false)}}>
-        X
+        &#9932;
       </button>
       <div className='relative bg-[#39714D] w-full h-24 rounded-t-[30px] flex overflow-hidden justify-end p-4'>
         <img src="/images/LogoLG.png" alt="" className="absolute -left-5 -top-4 w-32 -rotate-90" />
-        <p className='font-jakarta text-xl text-[#DBC49A] font-light text-right overflow-hidden'>
+        <p className='font-jakarta text-xl text-[#DBC49A] font-light text-right absolute'>
           Avseel<br />
           <span className='font-bold text-4xl'>{title}</span>
         </p>
@@ -32,10 +32,7 @@ const Card = ({title,price,content}:CardProps) => {
           content.map((item,key)=>{
             return(
               <>
-                <p className='font-jakarta text-[#DBC49A] text-sm sm:text-xl font-bold mb-2'>
-                  {item.title}
-                </p>
-                <div className="w-11/12 bg-[#DBC49A] py-2 px-4 rounded-md">
+                <div className="w-11/12 bg-[#DBC49A] py-2 px-4 rounded-md mt-4">
                   <p className="whitespace-normal font-jakarta">
                     {item.content}
                   </p>

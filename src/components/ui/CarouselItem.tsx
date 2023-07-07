@@ -20,15 +20,26 @@ export interface CarouselProps {
 
 export const CarouselItem = ({ item, width,title,content,price,...props }:CarouselProps) => {
     const {setData,setOpen} = useCardContext()
+    const [isMobile, setIsMobile] = React.useState(false);
     const CardProps ={
         title:title,
         content:content,
         price:price
     }
     const openModal = () => {
+        console.log(isMobile)
+        if(!isMobile) return
         setData(CardProps)
         setOpen(true)
     }
+    React.useEffect(() => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 640) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+        }
+    }, []);
   return (
     <div className="inline-flex h-fit overflow-hidden" style={{ width: width }}>
         <div className="grow h-fit sm:h-100 flex justify-center py-12">

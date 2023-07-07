@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from 'react';
 import { motion,useInView,useAnimation } from "framer-motion"
 import './Hero.css';
 
-const Hero = () => {
+const Hero = ({id}:{id:string}) => {
   
   const heroRef = useRef<HTMLImageElement>(null);
   const isInView = useInView(heroRef);
@@ -34,10 +34,10 @@ const Hero = () => {
 
 
   return (
-    <div className="relative">
+    <div className="relative" id={id}>
       <motion.img
         src="/images/OilDropper.png"
-        className="absolute z-50 left-32 w-48 sm:w-72 h-auto top-10"
+        className="absolute z-20 left-32 w-48 sm:w-72 h-auto top-10"
         alt="Logo"
         animate={animation}
       />

@@ -16,6 +16,10 @@ interface contentItem {
     setData:React.Dispatch<React.SetStateAction<CardProps | null>> 
     open : boolean,
     setOpen:React.Dispatch<React.SetStateAction<boolean>>
+    open2 : boolean,
+    setOpen2:React.Dispatch<React.SetStateAction<boolean>>,
+    data2 : string|null,
+    setData2:React.Dispatch<React.SetStateAction<string | null>>
     }
 
 
@@ -23,7 +27,11 @@ export const CardContext = React.createContext<CardContext>({
     data:null,
     setData:()=>{}
     ,open:false
-    ,setOpen:()=>{}
+    ,setOpen:()=>{},
+    open2:false
+    ,setOpen2:()=>{}
+    ,data2:null
+    ,setData2:()=>{}
 })
 
  

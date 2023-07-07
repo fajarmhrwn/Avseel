@@ -1,6 +1,12 @@
-import React from 'react'
+import React,{useRef} from 'react'
+import { Reveal } from '../ui/Reveal';
 
 const Bottom = () => {
+    const ref = useRef<HTMLDivElement>(null);
+    const ref2 = useRef<HTMLDivElement>(null);
+    const ref3 = useRef<HTMLDivElement>(null);
+    const ref4 = useRef<HTMLDivElement>(null);
+    const ref5 = useRef<HTMLDivElement>(null);
     const openInNewTab = () => {
         window.open("https://instagram.com/avseelx.plus?igshid=MzRlODBiNWFlZA==", "_blank", "noreferrer");
       };
@@ -25,59 +31,69 @@ const Bottom = () => {
                 Article & News
             </p>
             <div className='h-fit w-full mt-12 grid sm:grid-cols-2 gap-4 grid-flow-row'>
-                <div className='sm:row-span-2'>
-                    <img src="/images/Article1.jpg" alt="" className="object-cover rounded-[20px] mb-4"/>
-                    <a className='font-jakarta font-bold text-3xl w-2/3' href='https://www.jawapos.com/features/01444490/murid-sman-10-surabaya-riset-biji-alpukat-jadi-pengusir-nyamuk'>
-                        Murid SMAN 10 Surabaya Riset Biji Alpukat Jadi Pengusir Nyamuk
-                    </a>
-                    <p className='font-jakarta font-lg mt-4'>
-                    Selasa, 28 Maret 2023 | jawapos.com
-                    </p>
-                </div>
-                <div className='sm:flex'>
-                    <img src="/images/Article2.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
-                    <div>
-                        <a className='font-jakarta font-bold text-3xl w-2/3' href='https://beritajatim.com/pendidikan-kesehatan/siswa-sman-10-surabaya-ciptakan-spray-anti-nyamuk/'>
-                        Terbuat Olahan Biji Apukat Siswa SMAN 10 Surabaya Ciptakan Spray Anti Nyamuk
+                <Reveal ref={ref} className='sm:row-span-2'>
+                    <div >
+                        <img src="/images/Article1.jpg" alt="" className="object-cover rounded-[20px] mb-4"/>
+                        <a className='font-jakarta font-bold text-3xl w-2/3' href='https://www.jawapos.com/features/01444490/murid-sman-10-surabaya-riset-biji-alpukat-jadi-pengusir-nyamuk'>
+                            Murid SMAN 10 Surabaya Riset Biji Alpukat Jadi Pengusir Nyamuk
                         </a>
                         <p className='font-jakarta font-lg mt-4'>
-                        Minggu, 19 Februari 2023 | beritajatim.com
+                        Selasa, 28 Maret 2023 | jawapos.com
                         </p>
                     </div>
-                </div>
-                <div className='sm:flex'>
-                    <img src="/images/Article3.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                </Reveal>
+                <Reveal ref={ref2} className='sm:flex'>
+                    <div >
+                        <img src="/images/Article2.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <div>
+                            <a className='font-jakarta font-bold text-3xl w-2/3' href='https://beritajatim.com/pendidikan-kesehatan/siswa-sman-10-surabaya-ciptakan-spray-anti-nyamuk/'>
+                            Terbuat Olahan Biji Apukat Siswa SMAN 10 Surabaya Ciptakan Spray Anti Nyamuk
+                            </a>
+                            <p className='font-jakarta font-lg mt-4'>
+                            Minggu, 19 Februari 2023 | beritajatim.com
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+                <Reveal ref={ref3} className='sm:flex'>
                     <div>
-                        <a className='font-jakarta font-bold text-3xl w-2/3' href='https://m.antaranews.com/amp/berita/3458799/siswa-sman-10-surabaya-sabet-emas-di-ajang-yisf-2023'>
-                        Siswa SMAN 10 Surabaya sabet emas di ajang YISF 2023
-                        </a>
-                        <p className='font-jakarta font-lg mt-4'>
-                        Senin, 27 Maret 2023 | antaranews.com
-                        </p>
+                        <img src="/images/Article3.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <div>
+                            <a className='font-jakarta font-bold text-3xl w-2/3' href='https://m.antaranews.com/amp/berita/3458799/siswa-sman-10-surabaya-sabet-emas-di-ajang-yisf-2023'>
+                            Siswa SMAN 10 Surabaya sabet emas di ajang YISF 2023
+                            </a>
+                            <p className='font-jakarta font-lg mt-4'>
+                            Senin, 27 Maret 2023 | antaranews.com
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='sm:flex'>
-                    <img src="/images/Article4.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                </Reveal>
+                <Reveal ref={ref4} className='sm:flex'>
+                    <div >
+                        <img src="/images/Article4.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <div>
+                            <a className='font-jakarta font-bold text-3xl w-2/3' href='https://surabaya.tribunnews.com/2023/02/27/siswa-sman-10-surabaya-bikin-spray-anti-nyamuk-dan-aroma-terapi-tak-mengandung-alkohol'>
+                            Siswa SMAN 10 Surabaya Bikin Spray Anti Nyamuk dan Aroma Terapi, Tak Mengandung Alkohol
+                            </a>
+                            <p className='font-jakarta font-lg mt-4'>
+                            Senin, 27 Februari 2023 | surabaya.tribunnews.com
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+                <Reveal ref={ref5} className='sm:flex'>
                     <div>
-                        <a className='font-jakarta font-bold text-3xl w-2/3' href='https://surabaya.tribunnews.com/2023/02/27/siswa-sman-10-surabaya-bikin-spray-anti-nyamuk-dan-aroma-terapi-tak-mengandung-alkohol'>
-                        Siswa SMAN 10 Surabaya Bikin Spray Anti Nyamuk dan Aroma Terapi, Tak Mengandung Alkohol
-                        </a>
-                        <p className='font-jakarta font-lg mt-4'>
-                        Senin, 27 Februari 2023 | surabaya.tribunnews.com
-                        </p>
+                        <img src="/images/Article5.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <div>
+                            <a className='font-jakarta font-bold text-3xl w-2/3' href='https://www.harianbhirawa.co.id/ekstra-biji-alpukat-antarkan-siswa-sman-10-surabaya-raih-emas-di-ajang-international/'>
+                            Ekstra Biji Alpukat, Antarkan Siswa SMAN 10 Surabaya Raih Emas di Ajang International
+                            </a>
+                            <p className='font-jakarta font-lg mt-4'>
+                            Senin, 27 Maret 2023 | harianbhirawa.co.id
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className='sm:flex'>
-                    <img src="/images/Article5.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
-                    <div>
-                        <a className='font-jakarta font-bold text-3xl w-2/3' href='https://www.harianbhirawa.co.id/ekstra-biji-alpukat-antarkan-siswa-sman-10-surabaya-raih-emas-di-ajang-international/'>
-                        Ekstra Biji Alpukat, Antarkan Siswa SMAN 10 Surabaya Raih Emas di Ajang International
-                        </a>
-                        <p className='font-jakarta font-lg mt-4'>
-                        Senin, 27 Maret 2023 | harianbhirawa.co.id
-                        </p>
-                    </div>
-                </div>
+                </Reveal>
             </div>
         </div>
     </>

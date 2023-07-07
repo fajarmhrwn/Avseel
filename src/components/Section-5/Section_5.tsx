@@ -1,8 +1,13 @@
 import React from 'react'
+import Bottom from './Bottom'
+import Top from './Top'
 
-const Section_5 = () => {
+const Section_5 = ({id}:{id:string}) => {
   return (
-    <div>Section_5</div>
+    <div className='w-full h-fit' id={id}>
+        <Top/>
+        <Bottom/>
+    </div>
   )
 }
 
