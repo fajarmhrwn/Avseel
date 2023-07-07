@@ -16,7 +16,7 @@ interface CardProps {
 const Card = ({title,price,content}:CardProps) => {
   const {setOpen} = useCardContext()
   return (
-    <div className='w-80 h-fit rounded-md shadow-2xl'>
+    <div className='w-80 h-fit rounded-md sm:shadow-2xl bg-transparent'>
       <button className='text-white self-place-start text-xl font-bold font-jakarta  block sm:hidden ' onClick={()=>{setOpen(false)}}>
         X
       </button>

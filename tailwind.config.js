@@ -28,6 +28,16 @@ module.exports = {
       minHeight: {
         '96': '500px',
         '128': '780px',
+      },
+      maxWidth:{
+        '32':'8rem',
+        '64':'16rem',
+        'lebargambar':'55%',
+      },
+      maxHeight:{
+        '32':'8rem',
+        '64':'16rem',
+        'tinggigambar':'55%',
       }
     },
   },

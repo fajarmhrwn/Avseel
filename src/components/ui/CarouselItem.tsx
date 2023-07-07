@@ -32,7 +32,7 @@ export const CarouselItem = ({ item, width,title,content,price,...props }:Carous
   return (
     <div className="inline-flex h-fit overflow-hidden" style={{ width: width }}>
         <div className="grow h-fit sm:h-100 flex justify-center py-12">
-            <img src={item.icon} alt="" className="sm:max-w-full max-h-full sm:mr-32" onClick={openModal}/>
+            <img src={item.icon} alt="" className="max-w-64 max-h-64 sm:max-w-full sm:max-h-full sm:mr-32" onClick={openModal}/>
             <div className="sm:block hidden">
                 <Card title={title} content={content} price={price} />
             </div>
