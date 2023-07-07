@@ -13,7 +13,7 @@ export const Carousel = ({items}:{items:CarouselProps[]}) => {
     setActiveIndex(newIndex);
   };
   return (
-    <div className="overflow-hidden w-full h-full flex flex-col justify-center">
+    <div className="overflow-hidden sm:min-w-full h-fit flex flex-col justify-center">
     <div>
         <p className="sm:ml-2 font-jakarta text-lg sm:text-2xl font-bold text-white">AVSEEL</p>
         {items.map((item, index) => {
@@ -38,16 +38,17 @@ export const Carousel = ({items}:{items:CarouselProps[]}) => {
         );
         })}
     </div>
-      <div
+    <div
         className="whitespace-nowrap transition-transform duration-300 box-shadow-sm"
         style={{ transform: `translate(-${activeIndex as number * 100}%)`
-     }}
-      >
+    }}
+    >
         {items.map((item,key) => {
-          return <CarouselItem key={key} item={item.item} title={item.title} content={item.content} width={"100%"} />;
+        return <CarouselItem key={key} item={item.item} title={item.title} content={item.content} price={item.price} width={"100%"} />;
         })}
-      </div>
+    </div>
 
     </div>
+
   );
 };

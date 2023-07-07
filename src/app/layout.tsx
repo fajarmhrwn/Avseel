@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter,Plus_Jakarta_Sans } from 'next/font/google'
 import Head from 'next/head'
+import { CardProvider } from '@/context/CardProvider'
 
 
 const inter = Inter({
@@ -28,8 +29,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
-      <body className={`${inter.variable} ${jakarta.variable}`}>{children}
+      <body className={`${inter.variable} ${jakarta.variable}`}>
+        <CardProvider>
+          {children}
+        </CardProvider>
       </body>
     </html>
   )

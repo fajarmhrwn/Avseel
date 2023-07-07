@@ -3,7 +3,7 @@ import { Top } from './Top'
 
 const Section_4 = () => {
   return (
-    <div className='min-h-128 sm:min-h-screen bg-[#d8bc90] p-12'>
+    <div className='min-h-fit bg-[#d8bc90] p-12'>
         <Top />
     </div>
   )

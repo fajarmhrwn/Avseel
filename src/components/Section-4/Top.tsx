@@ -22,15 +22,8 @@ export const Top = () => {
           title:'test',
           content:'test'
         },
-        {
-          title:'test',
-          content:'test'
-        },
-        {
-          title:'test',
-          content:'test'
-        }
-      ]
+      ],
+      price:['150','15']
     },
     {
       item: {
@@ -43,7 +36,8 @@ export const Top = () => {
           title:'test',
           content:'test'
         }
-      ]
+      ],
+      price:['150','15']
     },
     {
       item: {
@@ -56,7 +50,8 @@ export const Top = () => {
           title:'test',
           content:'test'
         }
-      ]
+      ],
+      price:['150','15']
     },
   ]
   return (
