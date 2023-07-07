@@ -22,7 +22,7 @@ interface contentItem {
 export const CardContext = React.createContext<CardContext>({
     data:null,
     setData:()=>{}
-    ,open:true
+    ,open:false
     ,setOpen:()=>{}
 })
 

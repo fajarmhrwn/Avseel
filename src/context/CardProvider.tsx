@@ -19,7 +19,7 @@ interface IProps {
 
 export const CardProvider = ({children}:IProps) => {
   const [data, setData] = useState<CardProps|null>(null)
-  const [open, setOpen] = useState<boolean>(true)
+  const [open, setOpen] = useState<boolean>(false)
 
   return (
     <CardContext.Provider value={{data,setData,open,setOpen}}>
