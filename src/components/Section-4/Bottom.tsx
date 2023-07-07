@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bottom = () => {
     const openInNewTab = () => {
-        window.open("http://www.google.com", "_blank", "noreferrer");
+        window.open("https://instagram.com/avseelx.plus?igshid=MzRlODBiNWFlZA==", "_blank", "noreferrer");
       };
   return (
     <>
