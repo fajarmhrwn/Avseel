@@ -32,7 +32,6 @@ const Section_2 = ({id}:{id:string}) => {
         animate={textAnimation}>
         Continued to the <span className='font-bold'>second generation</span>, AVSEEL X, we present this calming essential oil which also acts as distressing media as novelty with a number of scent variation and ginger scent as our foremost smell. You can use AVSEEL X to increase your room aesthetic value!
         </motion.p>
-        <img />
     </div>
 
   )

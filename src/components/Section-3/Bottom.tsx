@@ -13,32 +13,32 @@ const Bottom = () => {
             <div className='h-fit bg-[#48855C] w-10/12 grid grid-cols-2 sm:grid-cols-3 grid-flow-row gap-4 p-12'>
                 <Reveal ref={ref3} className="col-span-2 sm:col-span-2 row-span-2 rounded-lg w-full h-full">
                     <div className="rounded-lg w-full h-full bg-black flex items-center justify-center">
-                        <img src="/images/kotak1.png" alt="" className="object-cover"/>
+                        <img src="/images/kotak1.png" alt="Kelebihan 1" className="object-cover"/>
                     </div>
                 </Reveal>
                 <Reveal ref={ref3} className="rounded-lg w-full h-full">
                     <div className="rounded-lg w-full h-full bg-black flex items-center justify-center">
-                        <img src="/images/kotak2.png" alt="" className="object-fill"/>
+                        <img src="/images/kotak2.png" alt="Kelebihan 2" className="object-fill"/>
                     </div>
                 </Reveal>
                 <Reveal ref={ref2} className="rounded-lg w-full h-full">
                     <div className="rounded-lg w-full h-full bg-black flex items-center justify-center">
-                        <img src="/images/kotak3.png" alt="" className="object-fill"/>
+                        <img src="/images/kotak3.png" alt="Kelebihan 3" className="object-fill"/>
                     </div>
                 </Reveal>
                 <Reveal ref={ref4} className="rounded-lg w-full h-full">
                     <div className="hidden sm:block  rounded-lg w-full h-full bg-black flex items-center justify-center">
-                        <img src="/images/kotak4.png" alt="" className="object-fill"/>
+                        <img src="/images/kotak4.png" alt="Kelebihan 4" className="object-fill"/>
                     </div>
                 </Reveal>
                 <Reveal ref={ref} className="col-span-2 sm:col-span-2 rounded-lg w-full h-full">
                     <div className="rounded-lg w-full h-full bg-black flex items-center justify-center">
-                        <img src="/images/kotak6.png" alt="" className="object-fill"/>
+                        <img src="/images/kotak6.png" alt="Kelebihan 6" className="object-fill"/>
                     </div>
                 </Reveal>
                 <Reveal ref={ref} className="col-span-2 sm:col-span-3 rounded-lg w-full h-full">
                     <div className="rounded-lg w-full h-full bg-black flex items-center justify-center">
-                        <img src="/images/kotak5.png" alt="" className="object-fill"/>
+                        <img src="/images/kotak5.png" alt="Kelebihan 5" className="object-fill"/>
                     </div>
                 </Reveal>
             </div>

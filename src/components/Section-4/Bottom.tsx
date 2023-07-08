@@ -24,7 +24,7 @@ const Bottom = () => {
                     Contact Us
                 </button>
             </div>
-            <img src="/images/Gen3.png" alt="" className="absolute w-96 -right-12 -top-24 rotate-[5deg] hidden sm:block" />
+            <img src="/images/Gen3.png" alt="Gen 3 Avseel" className="absolute w-96 -right-12 -top-24 rotate-[5deg] hidden sm:block" />
         </div>
         <div className='w-full h-fit flex flex-col items-start mt-10'>
             <p className='text-5xl font-jakarta font-bold text-[#2C3B2F] text-center'>
@@ -33,7 +33,7 @@ const Bottom = () => {
             <div className='h-fit w-full mt-12 grid sm:grid-cols-2 gap-4 grid-flow-row'>
                 <Reveal ref={ref} className='sm:row-span-2'>
                     <div >
-                        <img src="/images/Article1.jpg" alt="" className="object-cover rounded-[20px] mb-4"/>
+                        <img src="/images/Article1.jpg" alt="Artikel Jawa Pos" className="object-cover rounded-[20px] mb-4"/>
                         <a className='font-jakarta font-bold text-3xl w-2/3' href='https://www.jawapos.com/features/01444490/murid-sman-10-surabaya-riset-biji-alpukat-jadi-pengusir-nyamuk'>
                             Murid SMAN 10 Surabaya Riset Biji Alpukat Jadi Pengusir Nyamuk
                         </a>
@@ -44,7 +44,7 @@ const Bottom = () => {
                 </Reveal>
                 <Reveal ref={ref2} className='sm:flex'>
                     <div >
-                        <img src="/images/Article2.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <img src="/images/Article2.jpg" alt="Artikel BeritaJatim" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
                         <div>
                             <a className='font-jakarta font-bold text-3xl w-2/3' href='https://beritajatim.com/pendidikan-kesehatan/siswa-sman-10-surabaya-ciptakan-spray-anti-nyamuk/'>
                             Terbuat Olahan Biji Apukat Siswa SMAN 10 Surabaya Ciptakan Spray Anti Nyamuk
@@ -57,7 +57,7 @@ const Bottom = () => {
                 </Reveal>
                 <Reveal ref={ref3} className='sm:flex'>
                     <div>
-                        <img src="/images/Article3.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <img src="/images/Article3.jpg" alt="Artikel Antara" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
                         <div>
                             <a className='font-jakarta font-bold text-3xl w-2/3' href='https://m.antaranews.com/amp/berita/3458799/siswa-sman-10-surabaya-sabet-emas-di-ajang-yisf-2023'>
                             Siswa SMAN 10 Surabaya sabet emas di ajang YISF 2023
@@ -70,7 +70,7 @@ const Bottom = () => {
                 </Reveal>
                 <Reveal ref={ref4} className='sm:flex'>
                     <div >
-                        <img src="/images/Article4.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <img src="/images/Article4.jpg" alt="Artikel TribunNews" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
                         <div>
                             <a className='font-jakarta font-bold text-3xl w-2/3' href='https://surabaya.tribunnews.com/2023/02/27/siswa-sman-10-surabaya-bikin-spray-anti-nyamuk-dan-aroma-terapi-tak-mengandung-alkohol'>
                             Siswa SMAN 10 Surabaya Bikin Spray Anti Nyamuk dan Aroma Terapi, Tak Mengandung Alkohol
@@ -83,7 +83,7 @@ const Bottom = () => {
                 </Reveal>
                 <Reveal ref={ref5} className='sm:flex'>
                     <div>
-                        <img src="/images/Article5.jpg" alt="" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
+                        <img src="/images/Article5.jpg" alt="Artikel HarianBhirawa" className="object-cover rounded-[20px] mr-3 sm:max-w-lebargambar sm:max-h-tinggigambar" />
                         <div>
                             <a className='font-jakarta font-bold text-3xl w-2/3' href='https://www.harianbhirawa.co.id/ekstra-biji-alpukat-antarkan-siswa-sman-10-surabaya-raih-emas-di-ajang-international/'>
                             Ekstra Biji Alpukat, Antarkan Siswa SMAN 10 Surabaya Raih Emas di Ajang International

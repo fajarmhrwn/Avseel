@@ -73,6 +73,7 @@ const Section_1 = ({id}:{id:string}) => {
         <motion.img src="/images/Gen1.png" className='absolute sm:right-1/2 transform sm:-translate-x-1/2 w-32 h-auto sm:w-64'
         initial={{opacity:0}}
         animate={imageAnimation}
+        alt='Gen1'
         / >
         <motion.p  className="font-jakarta absolute sm:font-extralight text-white text-center sm:text-left text-lg sm:text-3xl translate-y-44 sm:translate-y-0 w-3/4 sm:w-7/12"
         initial={{opacity:0}}
