@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter,Plus_Jakarta_Sans } from 'next/font/google'
-import Head from 'next/head'
 import { CardProvider } from '@/context/CardProvider'
+import { Analytics } from '@vercel/analytics/react';
 
 
 const inter = Inter({
@@ -36,6 +36,7 @@ export default function RootLayout({
         <CardProvider>
           {children}
         </CardProvider>
+        <Analytics />
       </body>
     </html>
   )
